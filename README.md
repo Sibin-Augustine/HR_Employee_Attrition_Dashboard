@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-This project analyzes Employee Attrition data consisting of 1500 records using Power BI and SQL. SQL queries used to extract and summarize data quickly and POWER BI is used to create interactive visuals to obtain insights and to recommend strategic actions.
+This project analyzes Employee Attrition data consisting of 1500 records using Power BI and SQL. SQL queries used to extract and summarize data quickly and Power BI is used to create interactive visuals to obtain insights and to recommend strategic actions.
 
 ## Dashboard Preview 
 
