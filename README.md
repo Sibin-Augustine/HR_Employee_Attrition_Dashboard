@@ -11,6 +11,9 @@ A company is experiencing employee attrition. HR panel is expected to identify t
 
 <img width="1328" height="747" alt="image" src="https://github.com/user-attachments/assets/c6d110d2-0e5a-4f25-a2ad-051a5573cf6d" />
 
+## Download Power Bi File 
+
+**Github Release:**  https://github.com/sibinmsd/HR_Employee_Attrition_Dashboard/releases/tag/v1.0
 
 ## Dataset
 - 1,500 employee records
