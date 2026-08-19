@@ -1,4 +1,9 @@
-## HR wants to reduce attrition by 50%. Here's what the data says and here's my plan
+## HR Employee Attrition Analysis
+**HR wants to reduce attrition by 50%. Here's what the data says and here's my plan** 
+
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat)
 
 **Project Overview**
 
