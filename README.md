@@ -40,8 +40,8 @@ A company is experiencing employee attrition. HR panel is expected to identify t
 ## 🔬 Methodology
 1. **Data Cleaning**: Several fields contained duplicate values which was replaced in Power Query. Also salaries were missing which was replaced by the average salary of the corresponding job role.
 2. **Feature Engineering**: Created age group and salary group calculated columns using conditional DAX measures. 
-3. **EDA**: A
-4. **Visualization Strategy**: Chose pie chart for visualizing overall delivery performance since percentagewise visualization is best using Pie Chart. Chose Heatmap for route analysis because it is best for correlation analysis. Line plot is used for monthly analysis since it is best to identify hidden trends over a period of time. 
+3. **EDA**: Analyzed employee attrition based on gender, age, salary, department, job role to identify the factors contribute to the employee attrition. 
+4. **Visualization Strategy**: Chose bar chart to display the number of employees left based on age group, salary slab and department because it is easier to compare and identify which category experience higher attrition.  
 
 ## KPIs 
 - Attrition Rate :- The percentage of employees left the company
