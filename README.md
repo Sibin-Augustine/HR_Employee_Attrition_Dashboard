@@ -23,6 +23,11 @@ A D2C subscription business wants to:
 
 ---
 
+### 📥 Project Assets & Source Files
+* 📊 **Power BI Source File (.pbix):** [Download D2C_Customer_Churn.pbix (v1.0.0)](https://github.com/Sibin-Augustine/D2C_Customer_Revenue_Risk_Analysis/releases/download/v1.0/D2C_Revenue_Risk_Analysis.pbix)
+
+---
+
 ### 📊 Dashboard Preview
 
 <img width="626" height="353" alt="image" src="https://github.com/user-attachments/assets/202e8a2b-628b-433c-ba36-746ec570c8e9" />
