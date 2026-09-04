@@ -106,9 +106,9 @@ A D2C subscription business wants to:
 
 | # | Finding |
 | --- | --- |
-| 1 | **Platinum Tier Hemorrhage:** Platinum users lose ₹12M in Churn MRR while only keeping ₹6M in Active MRR (a massive ~65% revenue loss rate). |
-| 2 | **High Support Friction:** 75K active customers have generated between 3 and 8 support tickets, indicating critical UX or product fulfillment friction. |
-| 3 | **Android Platform Leak:** Android users account for the highest absolute volume of lost revenue (₹44M), heavily correlating with platform market share but requiring UX auditing. |
+| 1 | **Platinum Tier Hemorrhage:** Platinum tier customer cancellations results to revenue loss of ₹12M in Monthly Reccurring Revenue while active customers are generating only ₹6M in Active MRR (a massive ~65% revenue loss rate). |
+| 2 | **High Support Friction:** 75K active customers have generated between 3 and 8 support tickets last year, indicating critical UX or product fulfillment friction. |
+| 3 | **Android Platform Leak:** Android users account for the highest absolute volume of monthly lost revenue (₹44M), heavily correlating with platform market share but requiring UX auditing. |
 
 🧠 **Counterintuitive Insight (The "Occasional" Paradox)**
 
