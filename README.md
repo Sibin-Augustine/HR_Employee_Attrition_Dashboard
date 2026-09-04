@@ -1,96 +1,151 @@
-## HR Employee Attrition Analysis
-**HR wants to reduce attrition by 50%. Here's what the data says and here's my plan** 
+# 🛒 D2C Subscription Churn & Revenue Risk Analysis | Power BI
 
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat)
+An end-to-end customer retention and revenue risk analysis for a D2C subscription platform, shifting the analytical focus from flat demographic churn percentages to actionable financial impact (Lost MRR) and high-risk segment intervention.
 
-**Project Overview**
+---
 
-This project analyzes Employee Attrition data consisting of 1500 records using Power BI and SQL. SQL queries used to extract and summarize data quickly and Power BI is used to create interactive visuals to obtain insights and to recommend strategic actions.
+### 📌 Project Overview
 
-**Problem Statement**
-A company is experiencing employee attrition. HR panel is expected to identify the factors that are causing it and reduce it by 50%. This analysis aims to highlight the major contributing factors of attrition and strategic recommendations to reduce it. 
+This project analyzes historical customer behavior, subscription tier dynamics, and engagement scores to identify where the business is leaking recurring revenue. Using Power Query for data modeling and Power BI for interactive visualization, the analysis cuts through the noise of uniform churn rates to expose how specific customer segments—particularly high-tier and "occasional" users—carry disproportionate financial risk.
 
-## Dashboard Preview 
+**Business Context:** Customer churn limits business growth. Understanding *which* demographics drive the highest churn volume is useful, but understanding *which* subscription tiers and engagement behaviors drive the highest **Revenue at Risk** is critical for allocating retention marketing budgets effectively.
 
-<img width="1328" height="747" alt="image" src="https://github.com/user-attachments/assets/c6d110d2-0e5a-4f25-a2ad-051a5573cf6d" />
+---
 
-## Download Power Bi File 
+### 🎯 Problem Statement
 
-**Github Release:**  [https://github.com/sibinmsd/HR_Employee_Attrition_Dashboard/releases/tag/v1.0](https://github.com/sibinmsd/HR_Employee_Attrition_Dashboard/releases/download/v1.0/HR_Analytics_Dashboard.pbix)
+A D2C subscription business wants to:
 
-## Dataset
-- 1,500 employee records
-- Age
-- Salary
-- Education
-- Experience
-- Job role and satisfaction
-- Marital Status 
-- Performance parameters
+1. Shift retention metrics from basic customer headcounts to financial impact (Active MRR vs. Lost MRR).
+2. Identify which subscription tiers and platforms contribute most to the revenue leak.
+3. Understand the financial vulnerability of different user engagement segments (e.g., Occasional vs. At-Risk).
+4. Develop data-driven, targeted intervention strategies to reduce Lost MRR.
 
-## Tools Used
-- SQL
-- Power Query
-- Power BI
-- DAX Measures
-- Dashboard Design
+---
 
-## 🔬 Methodology
-1. **Data Cleaning**: Several fields contained duplicate values which was replaced in Power Query. Also salaries were missing which was replaced by the average salary of the corresponding job role.
-2. **Feature Engineering**: Created age group and salary group calculated columns using conditional DAX measures. 
-3. **EDA**: Analyzed employee attrition based on gender, age, salary, department, job role to identify the factors contribute to the employee attrition. 
-4. **Visualization Strategy**: Chose bar chart to display the number of employees left based on age group, salary slab and department because it is easier to compare and identify which category experience higher attrition.  
+### 📊 Dashboard Preview
 
-## KPIs 
-- Attrition Rate :- The percentage of employees left the company
-- Average Employee Age :- Average age of the employees in the company
-- Average Salary :- Average monthly salary of employees
-- Average years at company :- Average amount of years in the current company
- 
-**Analysis used**
-1. Attrition by age analysis
-2. Attrition by Job department and role analysis
-3. Attrition by education analysis
-4. Attrition by work experience analysis
-
-**DAX Measures used**
-1. Created column for age group, salary range, work experience using DAX measures
-2. Calculated percentage of attrition
-
-## SQL Queries
-**Key performance Indicators**
-<img width="1356" height="777" alt="image" src="https://github.com/user-attachments/assets/8bc6470e-5327-4e58-8bbc-d225408f0e89" />
+<img width="626" height="353" alt="image" src="https://github.com/user-attachments/assets/202e8a2b-628b-433c-ba36-746ec570c8e9" />
 
 
-**Attrition by education**
-<img width="1207" height="366" alt="image" src="https://github.com/user-attachments/assets/b2fd1472-f3f9-4f8a-aca1-55134eaa1b14" />
+---
 
-**Attrition by Age**
-<img width="926" height="584" alt="image" src="https://github.com/user-attachments/assets/4642ba71-0e81-4c84-b4f9-63a6e24b0b33" />
+### 📁 Dataset
 
-**Attrition by Salary**
-<img width="1088" height="565" alt="image" src="https://github.com/user-attachments/assets/9d00042b-9160-409a-ad46-035ec1fc510d" />
+| Attribute | Details |
+| --- | --- |
+| **Source** | Customer Churn Prediction Dataset V2 |
+| **Domain** | D2C E-commerce / Subscription Services |
+| **Volume** | 7 Years of historical transaction and status data |
+| **Business KPIs** | Total Revenue, Active MRR, Lost MRR, AOV, CLTV |
+| **Fields** | Subscription plan, engagement score, churn risk score, support tickets, device, age, income, status |
 
-**Attrition by Department and Experience**
-<img width="1325" height="562" alt="image" src="https://github.com/user-attachments/assets/25d5d865-1158-4927-8e85-7b6c9de78b53" />
+**Key Fields Used**
 
-**Attrition by Job Role and Satisfaction**
-<img width="1012" height="858" alt="image" src="https://github.com/user-attachments/assets/29614d0e-9038-4ffb-b9ac-d5ad481efa06" />
+* `order_amount`, `Actual_Monthly_Fee`, `subscription_plan`
+* `engagement_segment`, `churn_risk_score`, `support_tickets`
+* `preferred_device`, `customer_status`
 
-**Key Insights**
+---
 
-1. Attrition is highest among younger employees irrespective of the gender.
-2. Among the three departments, employees in Sales department are more interested in leaving company.
-3. Attrition is highest among employees who works as Laboratary Technician in R&D department.
-4. Mostly, single, low salaried employees are interest in leaving company.
-5. Attrition is highest among employees with experience less than 10 years.
+### 🛠️ Tools & Technologies
 
-**Business Recommendations**
-1. Compare the industry standard salary for job roles such as Laboratary Technician, Sales Executive etc and if it is lower than standard, then provide hike 
-2. Provide bonuses and perks for low salaries employees.
-3. Coordinate with sales department to ensure job satisfaction and upskilling of employees within the department.
-4. Evaluate the job responsibilities of jobs roles experiencing high attrition and ensure the hiring process is efficient in selecting perfect match for the job roles. 
-5. Consider promoting deserving employees with work experience less than 10 years.
+| Tool | Purpose |
+| --- | --- |
+| **Power Query** | Data cleansing, resolving $0 fee anomalies via conditional logic |
+| **DAX** | Feature engineering (AOV, CLTV, Lost MRR, dynamic pricing tables) |
+| **Power BI** | Star Schema modeling, Decomposition Trees, Treemaps, interactive storytelling |
 
+---
+
+### 🔬 Methodology
+
+**1. Data Modeling & Cleansing (Power Query / DAX)**
+
+* Resolved inactive customer data anomalies (e.g., handling missing or zeroed fees for churned users) by creating a `Dim_Pricing` lookup table.
+* Implemented a Star Schema architecture connecting customer dimensions with transaction fact tables.
+* Engineered calculated measures for True Average Order Value (`DIVIDE` on distinct orders) and Customer Lifetime Value.
+
+**2. Feature Engineering**
+
+* **Revenue Mapping:** Converted binary churn status into financial metrics (`Active MRR` and `Lost MRR`).
+* **Risk Segmentation:** Mapped `Churn Risk Score` and `Engagement Score` to actionable customer cohorts.
+
+**3. Exploratory Analysis**
+
+* Identified that demographic dimensions (Age, Payment Method) exhibited a flat ~20.7% uniform churn rate.
+* Pivoted the analysis to evaluate absolute revenue loss and tier-based financial hemorrhage to extract actionable business insights.
+
+**4. Dashboard Design**
+
+* Built a 3-page hierarchical layout: Executive Overview (Macro), Churn Analysis (Diagnostic), and Customer Segmentation (Actionable).
+* Utilized AI-powered Decomposition Trees and conditional Treemaps for dynamic drill-down.
+
+---
+
+### 📈 Key Performance Indicators
+
+| KPI | Value |
+| --- | --- |
+| **Total Historical Revenue** | ₹63.78bn |
+| **Active MRR** | ₹124.53M |
+| **Lost MRR** | ₹73.39M |
+| **Overall Churn Rate** | 20.7% |
+| **Overall Average Order Value** | ₹63.78K |
+
+---
+
+### 🔍 Key Findings
+
+🎯 **Overall Portfolio Health**
+
+* The business maintains a strong historical revenue base of ₹63.78bn, but currently sacrifices ₹73.39M in recurring revenue to churn every month.
+* The flat baseline churn rate (~20.7%) across demographics indicates that churn is driven by product experience or tenure, rather than specific user personas.
+
+⚠️ **Top Risk Factors**
+
+| # | Finding |
+| --- | --- |
+| 1 | **Platinum Tier Hemorrhage:** Platinum users lose ₹12M in Churn MRR while only keeping ₹6M in Active MRR (a massive ~65% revenue loss rate). |
+| 2 | **High Support Friction:** 75K active customers have generated between 3 and 8 support tickets, indicating critical UX or product fulfillment friction. |
+| 3 | **Android Platform Leak:** Android users account for the highest absolute volume of lost revenue (₹44M), heavily correlating with platform market share but requiring UX auditing. |
+
+🧠 **Counterintuitive Insight (The "Occasional" Paradox)**
+
+* The "Occasional" engagement segment generates the highest active revenue (₹3.94 Cr), anchoring the business's cash flow.
+* **Implication:** The company relies heavily on casual, low-engagement users for bulk revenue. Because their engagement is low, they are highly susceptible to slipping silently into the "At Risk" category without immediate detection.
+
+---
+
+### 💡 Business Recommendations
+
+🎯 **Retention Strategy**
+
+1. **Deploy Platinum Interventions:** Immediately target high-risk Platinum and Gold users with aggressive retention campaigns (e.g., premium discounts or dedicated success managers). Saving a fraction of these users offsets massive MRR losses.
+2. **Engage the "Occasional" Base:** Develop automated lifecycle marketing (e.g., "We miss you" campaigns, low-barrier re-engagement offers) to keep the highest-revenue occasional segment from transitioning to churned status.
+
+🛠️ **Product & Operations Strategy**
+
+3.  **Investigate Android App UX:** Conduct an immediate audit of the Android application checkout and subscription management flows to determine if the ₹44M loss is strictly volume-based or exacerbated by technical friction.
+4.  **Proactive Ticket Resolution:** Flag any active user crossing the 3-ticket threshold for priority routing, as high ticket volume heavily correlates with impending cancellation.
+
+---
+
+### 🧠 Skills Demonstrated
+
+* [x] **Data Modeling:** Star Schema architecture, Fact/Dimension table relationships
+* [x] **DAX Proficiency:** Time-intelligence, conditional aggregation, custom financial measures (MRR, CLTV)
+* [x] **Data Visualization:** Decomposition Trees, Treemaps, hierarchical layout design
+* [x] **Critical Thinking:** Identifying synthetic data limitations and pivoting to absolute financial impact
+* [x] **Business Storytelling:** Translating flat churn percentages into actionable retention strategies
+
+---
+
+### 📬 Contact
+
+**Sibin Augustine**
+📧 sibinaugustine12830@gmail.com
+💼 [LinkedIn](https://www.google.com/search?q=%23)
+🌐 [Portfolio](https://www.google.com/search?q=%23)
+
+⭐ *If you found this analysis useful, please star the repo!*
