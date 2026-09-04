@@ -73,7 +73,7 @@ A D2C subscription business wants to:
 
 **3. Exploratory Analysis**
 
-* Identified that demographic dimensions (Age, Payment Method) exhibited a flat ~20.7% uniform churn rate.
+* Identified that demographic dimensions (Age, Income) exhibited a flat ~20.7% uniform churn rate.
 * Pivoted the analysis to evaluate absolute revenue loss and tier-based financial hemorrhage to extract actionable business insights.
 
 **4. Dashboard Design**
