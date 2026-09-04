@@ -1,4 +1,4 @@
-# 🛒 D2C Subscription Churn & Revenue Risk Analysis | Power BI
+# 🛒 D2C Subscription Churn & Revenue Risk Analysis 
 
 An end-to-end customer retention and revenue risk analysis for a D2C subscription platform, shifting the analytical focus from flat demographic churn percentages to actionable financial impact (Lost MRR) and high-risk segment intervention.
 
